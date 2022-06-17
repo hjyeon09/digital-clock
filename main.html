@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <style>
+            @import url("https.//fonts.googleapis.com/css2?family=Gugi&display=swap");
+        </style>
+    </head>
+    <body style="font-family: 'Gugi', cursive">
+        <h1>시계</h1>
+        <div id="clock">시간</div>
+        <script src="digitalClock.js"></script>
+    </body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<header>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</header>
+
+<body>
+    <div id="app">
+        <h2>{{timestamp}}</h2>
+    </div>
+</body>
+<script>
+    const app = new Vue({
+        el: `#app`,
+        data: {
+            timestamp: ""
+        },
+        methods: {
+            getNow() {
+                const today = new Date();
+                const pluszeo = (num) => num < 10 ? '0' + num : '' + num
+
+                const date = today.getFullYear() + '-' + pluszeo(today.getMonth() + 1) + '-' + pluszeo(today.getDate());
+                const time = pluszeo(today.getHours()) + "시 " + pluszeo(today.getMinutes()) + "분 " + pluszeo(today.getSeconds()) + "." + today.getMilliseconds() + "초";
+                const dateTime = date + ' ' + time;
+                this.timestamp = dateTime;
+                return dateTime;
+            }
+        },
+        created() {
+            setInterval(this.getNow, 10);
+        },
+    })
+</script>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+  <head>
+    <meta charset="utf-8">  
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+
+  </head>
+    <body>
+        <div id="time" class="time"></div>
+        <div id="date" class="date"></div>
+    </body>
+
+</html>
